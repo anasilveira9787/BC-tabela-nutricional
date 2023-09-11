@@ -1,0 +1,83 @@
+button {
+    border: none;
+    cursor: pointer;
+    transition: all ease-in .3s; 
+}
+
+button.icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    display: inline-flex;
+    align-items: flex-start;
+    border-radius: 50%;
+    background: var(--background, #D8EED2);
+    box-shadow: 0px 8px 16px 0px rgba(59, 171, 30, 0.25);
+}
+
+button.icon.back {
+    background-image: url("../public/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+button.icon.fav {
+    background-image: url("../public/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+button.icon.back {
+    background-image: url("../public/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+button.icon.fav:hover,
+button.icon.fav:active
+ {
+    background-image: url("../public/heart-filled.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+button.icon.fav.favorited
+ {
+    background-image: url("../public/heart-filled.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+
+button.openTable {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+
+    display: flex;
+    width: 100%;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+
+    
+    border-radius: 16px;
+    background: var(--product-primary); 
+    box-shadow: 0px 8px 24px 0px rgba(59, 171, 30, 0.25);
+    
+
+}
+button.openTable:hover, 
+button.openTable:active,
+button.icon.fav:hover,
+button.icon.fav:active,
+button.icon.back:hover,
+button.icon.back:active {
+    box-shadow: none;
+    transform: scale3d(1.1,1.1,1.1);
+}

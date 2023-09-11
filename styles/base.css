@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --background-color: #D8EED2;
+    --white-color: #FDFDFD;
+    --regular-green: #B1DDA5;
+    --text-primary: #242424;
+    --product-primary: #3BAB1E;
+    --product-secondary: #DE215A;
+
+}
+
+body, button, input {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+    font-size: 14px;
+    line-height: 16px;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+.navButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px 0 16px;
+}
+
